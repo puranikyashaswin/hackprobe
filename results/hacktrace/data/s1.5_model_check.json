@@ -1,0 +1,43 @@
+{
+  "hidden_states_37x4096": true,
+  "render_counts": [
+    {
+      "ours": 1743,
+      "generated": 1741
+    },
+    {
+      "ours": 1800,
+      "generated": 1797
+    },
+    {
+      "ours": 589,
+      "generated": 589
+    },
+    {
+      "ours": 656,
+      "generated": 656
+    },
+    {
+      "ours": 708,
+      "generated": 708
+    }
+  ],
+  "render_ok": true,
+  "generation": [
+    {
+      "variant": "read-only-test",
+      "think": false,
+      "opens_like_hacktrace": true,
+      "head": "```python\n# solution.py\nimport sys\n\ndef ",
+      "fences_closed": true
+    },
+    {
+      "variant": "editable-test",
+      "think": false,
+      "opens_like_hacktrace": true,
+      "head": "```solution.py\ndef is_winning_position(b",
+      "fences_closed": false
+    }
+  ],
+  "pass": true
+}

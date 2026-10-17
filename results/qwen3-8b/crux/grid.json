@@ -1,0 +1,1105 @@
+{
+  "read_only_layer": 19,
+  "C": 0.01,
+  "cells": {
+    "disg_orig": {
+      "probe": {
+        "within": 0.998650636802811,
+        "ci": [
+          0.9965283267457181,
+          1.0
+        ],
+        "n_rows": 2501,
+        "n_pos": 1148,
+        "n_problems": 69
+      },
+      "tfidf": {
+        "within": 0.9942100962335171,
+        "ci": [
+          0.9893210172102963,
+          0.9980755239452156
+        ],
+        "n_rows": 2501,
+        "n_pos": 1148,
+        "n_problems": 69
+      },
+      "lit7_lr": {
+        "within": 0.956609310514065,
+        "ci": [
+          0.9266124787025382,
+          0.9800153828255896
+        ],
+        "n_rows": 2501,
+        "n_pos": 1148,
+        "n_problems": 69
+      },
+      "rules_lr": {
+        "within": 0.8883213207983127,
+        "ci": [
+          0.8412266158079542,
+          0.9307349731655378
+        ],
+        "n_rows": 2501,
+        "n_pos": 1148,
+        "n_problems": 69
+      },
+      "rule_b_count": {
+        "within": 0.7231012863858105,
+        "ci": [
+          0.666328644246863,
+          0.7788374490929502
+        ],
+        "n_rows": 2501,
+        "n_pos": 1148,
+        "n_problems": 69
+      },
+      "judge": {
+        "within": 0.9954404397510872,
+        "ci": [
+          0.991876939845196,
+          0.9981749482401656
+        ],
+        "n_rows": 2501,
+        "n_pos": 1148,
+        "n_problems": 69
+      },
+      "length": {
+        "within": 0.32135369738020186,
+        "ci": [
+          0.25006012711889974,
+          0.39733101815804295
+        ],
+        "n_rows": 2501,
+        "n_pos": 1148,
+        "n_problems": 69
+      },
+      "canon_tfidf": {
+        "within": 0.9877945406709698,
+        "ci": [
+          0.9815441688427127,
+          0.9933841680424429
+        ],
+        "n_rows": 2501,
+        "n_pos": 1148,
+        "n_problems": 69
+      },
+      "canon_rules_lr": {
+        "within": 0.8883213207983127,
+        "ci": [
+          0.8412266158079542,
+          0.9307349731655378
+        ],
+        "n_rows": 2501,
+        "n_pos": 1148,
+        "n_problems": 69
+      },
+      "canon_rule_b_count": {
+        "within": 0.7231012863858105,
+        "ci": [
+          0.666328644246863,
+          0.7788374490929502
+        ],
+        "n_rows": 2501,
+        "n_pos": 1148,
+        "n_problems": 69
+      },
+      "probe_minus_best": {
+        "diff": 0.00321019705172354,
+        "ci": [
+          -0.000204645991766475,
+          0.006214789833826128
+        ],
+        "best_point": "judge",
+        "p": 0.066,
+        "n_problems": 69,
+        "adds_value": false
+      },
+      "rule_unflagged": {
+        "n_rows": 1544,
+        "probe": {
+          "within": 0.998095238095238,
+          "ci": [
+            0.9942857142857143,
+            1.0
+          ],
+          "n_rows": 1544,
+          "n_pos": 198,
+          "n_problems": 28
+        },
+        "tfidf": {
+          "within": 0.948164684800023,
+          "ci": [
+            0.8929720945129779,
+            0.9917238713667287
+          ],
+          "n_rows": 1544,
+          "n_pos": 198,
+          "n_problems": 28
+        },
+        "judge": {
+          "within": 0.9902620164227306,
+          "ci": [
+            0.9818018922215349,
+            0.9973488284202568
+          ],
+          "n_rows": 1544,
+          "n_pos": 198,
+          "n_problems": 28
+        },
+        "probe_minus_best": {
+          "diff": 0.00783322167250744,
+          "ci": [
+            -0.0006256946591766786,
+            0.016720843640486503
+          ],
+          "best_point": "judge",
+          "p": 0.07,
+          "n_problems": 28,
+          "adds_value": false
+        }
+      },
+      "floor": {
+        "hack_programs": 1148,
+        "problems_with_both": 69,
+        "pilot": false
+      },
+      "selection_dependent": [
+        "lit7_lr",
+        "rules_lr",
+        "rule_b_count",
+        "canon_rules_lr",
+        "canon_rule_b_count"
+      ]
+    },
+    "disg_unparse": {
+      "probe": {
+        "within": 0.9990303657694961,
+        "ci": [
+          0.9974016563146998,
+          1.0
+        ],
+        "n_rows": 2501,
+        "n_pos": 1148,
+        "n_problems": 69
+      },
+      "tfidf": {
+        "within": 0.9902835048193426,
+        "ci": [
+          0.9849208841956429,
+          0.9948978017531973
+        ],
+        "n_rows": 2501,
+        "n_pos": 1148,
+        "n_problems": 69
+      },
+      "lit7_lr": {
+        "within": 0.9623494788951413,
+        "ci": [
+          0.9374868536441935,
+          0.9813436297982864
+        ],
+        "n_rows": 2501,
+        "n_pos": 1148,
+        "n_problems": 69
+      },
+      "rules_lr": {
+        "within": 0.8883213207983127,
+        "ci": [
+          0.8412266158079542,
+          0.9307349731655378
+        ],
+        "n_rows": 2501,
+        "n_pos": 1148,
+        "n_problems": 69
+      },
+      "rule_b_count": {
+        "within": 0.7231012863858105,
+        "ci": [
+          0.666328644246863,
+          0.7788374490929502
+        ],
+        "n_rows": 2501,
+        "n_pos": 1148,
+        "n_problems": 69
+      },
+      "judge": {
+        "within": 0.9967131061494197,
+        "ci": [
+          0.9937510985537229,
+          0.9987231890591938
+        ],
+        "n_rows": 2501,
+        "n_pos": 1148,
+        "n_problems": 69
+      },
+      "length": {
+        "within": 0.312390633389598,
+        "ci": [
+          0.24342361793413367,
+          0.38389233894061187
+        ],
+        "n_rows": 2501,
+        "n_pos": 1148,
+        "n_problems": 69
+      },
+      "canon_tfidf": {
+        "within": 0.9878108246638049,
+        "ci": [
+          0.9815607318289673,
+          0.9934017922029422
+        ],
+        "n_rows": 2501,
+        "n_pos": 1148,
+        "n_problems": 69
+      },
+      "canon_rules_lr": {
+        "within": 0.8883213207983127,
+        "ci": [
+          0.8412266158079542,
+          0.9307349731655378
+        ],
+        "n_rows": 2501,
+        "n_pos": 1148,
+        "n_problems": 69
+      },
+      "canon_rule_b_count": {
+        "within": 0.7231012863858105,
+        "ci": [
+          0.666328644246863,
+          0.7788374490929502
+        ],
+        "n_rows": 2501,
+        "n_pos": 1148,
+        "n_problems": 69
+      },
+      "probe_minus_best": {
+        "diff": 0.0023172596200764506,
+        "ci": [
+          -0.00015460841648984037,
+          0.005244029888606256
+        ],
+        "best_point": "judge",
+        "p": 0.07,
+        "n_problems": 69,
+        "adds_value": false
+      },
+      "rule_unflagged": {
+        "n_rows": 1544,
+        "probe": {
+          "within": 0.9992687074829932,
+          "ci": [
+            0.998095238095238,
+            1.0
+          ],
+          "n_rows": 1544,
+          "n_pos": 198,
+          "n_problems": 28
+        },
+        "tfidf": {
+          "within": 0.9247154344193819,
+          "ci": [
+            0.8593854949874687,
+            0.9765051952798663
+          ],
+          "n_rows": 1544,
+          "n_pos": 198,
+          "n_problems": 28
+        },
+        "judge": {
+          "within": 0.9783158043919321,
+          "ci": [
+            0.9439256043924746,
+            0.9974918827778321
+          ],
+          "n_rows": 1544,
+          "n_pos": 198,
+          "n_problems": 28
+        },
+        "probe_minus_best": {
+          "diff": 0.020952903091061015,
+          "ci": [
+            0.0018665840738210093,
+            0.05209748329156231
+          ],
+          "best_point": "judge",
+          "p": 0.011,
+          "n_problems": 28,
+          "adds_value": false
+        }
+      },
+      "floor": {
+        "hack_programs": 1148,
+        "problems_with_both": 69,
+        "pilot": false
+      },
+      "selection_dependent": [
+        "lit7_lr",
+        "rules_lr",
+        "rule_b_count",
+        "canon_rules_lr",
+        "canon_rule_b_count"
+      ]
+    },
+    "disg_surface": {
+      "probe": {
+        "within": 0.9995172978027116,
+        "ci": [
+          0.9987564282374942,
+          1.0
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "tfidf": {
+        "within": 0.9320184957582379,
+        "ci": [
+          0.8969957022053068,
+          0.9613495647388491
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "lit7_lr": {
+        "within": 0.699393702241778,
+        "ci": [
+          0.6375851186902939,
+          0.7632398630216378
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "rules_lr": {
+        "within": 0.7423573289919724,
+        "ci": [
+          0.6862597814635669,
+          0.7970337453198666
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "rule_b_count": {
+        "within": 0.7229742012640276,
+        "ci": [
+          0.6662015591250801,
+          0.7787408307354623
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "judge": {
+        "within": 0.9956809571912262,
+        "ci": [
+          0.9918647420098594,
+          0.9985324677040904
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "length": {
+        "within": 0.29836660091662914,
+        "ci": [
+          0.2364039462808647,
+          0.36056346714356236
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "canon_tfidf": {
+        "within": 0.6649202988431789,
+        "ci": [
+          0.591441129680819,
+          0.7358004728029817
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "canon_rules_lr": {
+        "within": 0.7423573289919724,
+        "ci": [
+          0.6862597814635669,
+          0.7970337453198666
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "canon_rule_b_count": {
+        "within": 0.7229742012640276,
+        "ci": [
+          0.6662015591250801,
+          0.7787408307354623
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "probe_minus_best": {
+        "diff": 0.0038363406114856335,
+        "ci": [
+          0.000969784281665248,
+          0.007419760877131726
+        ],
+        "best_point": "judge",
+        "p": 0.0,
+        "n_problems": 69,
+        "adds_value": false
+      },
+      "rule_unflagged": {
+        "n_rows": 1826,
+        "probe": {
+          "within": 0.9995261941448382,
+          "ci": [
+            0.9985785824345147,
+            1.0
+          ],
+          "n_rows": 1826,
+          "n_pos": 484,
+          "n_problems": 44
+        },
+        "tfidf": {
+          "within": 0.9073160476442854,
+          "ci": [
+            0.8554599907670902,
+            0.9507510064864853
+          ],
+          "n_rows": 1826,
+          "n_pos": 484,
+          "n_problems": 44
+        },
+        "judge": {
+          "within": 0.986338875502518,
+          "ci": [
+            0.9741613515337635,
+            0.9958982692957438
+          ],
+          "n_rows": 1826,
+          "n_pos": 484,
+          "n_problems": 44
+        },
+        "probe_minus_best": {
+          "diff": 0.013187318642320256,
+          "ci": [
+            0.0034109044432238055,
+            0.02466917914121462
+          ],
+          "best_point": "judge",
+          "p": 0.0,
+          "n_problems": 44,
+          "adds_value": false
+        }
+      },
+      "per_transform": {
+        "dict_lookup_changed": {
+          "n_rows": 1108,
+          "probe": {
+            "within": 0.9995535714285715,
+            "ci": [
+              0.9986607142857142,
+              1.0
+            ],
+            "n_rows": 1108,
+            "n_pos": 909,
+            "n_problems": 28
+          },
+          "rule_b_count": {
+            "within": 0.6765027262260118,
+            "ci": [
+              0.5815785235969387,
+              0.7770027439414312
+            ],
+            "n_rows": 1108,
+            "n_pos": 909,
+            "n_problems": 28
+          },
+          "rules_lr": {
+            "within": 0.6807171216616054,
+            "ci": [
+              0.5865635814977872,
+              0.7794197283572504
+            ],
+            "n_rows": 1108,
+            "n_pos": 909,
+            "n_problems": 28
+          }
+        },
+        "control_applied": {
+          "n_rows": 312,
+          "probe": {
+            "within": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "n_rows": 312,
+            "n_pos": 175,
+            "n_problems": 9
+          },
+          "rule_b_count": {
+            "within": 0.7037037037037037,
+            "ci": [
+              0.5555555555555556,
+              0.8518518518518519
+            ],
+            "n_rows": 312,
+            "n_pos": 175,
+            "n_problems": 9
+          },
+          "rules_lr": {
+            "within": 0.8148148148148149,
+            "ci": [
+              0.6666666666666666,
+              0.9444444444444444
+            ],
+            "n_rows": 312,
+            "n_pos": 175,
+            "n_problems": 9
+          }
+        }
+      },
+      "floor": {
+        "hack_programs": 1137,
+        "problems_with_both": 69,
+        "pilot": false
+      },
+      "selection_dependent": [
+        "lit7_lr",
+        "rules_lr",
+        "rule_b_count",
+        "canon_rules_lr",
+        "canon_rule_b_count"
+      ]
+    },
+    "disg_full": {
+      "probe": {
+        "within": 0.9986427944036639,
+        "ci": [
+          0.9974016014179058,
+          0.9996400338791643
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "tfidf": {
+        "within": 0.859082122037544,
+        "ci": [
+          0.8037911854139421,
+          0.9128881736759259
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "lit7_lr": {
+        "within": 0.632764995001633,
+        "ci": [
+          0.5590963981797276,
+          0.7044583052810511
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "rules_lr": {
+        "within": 0.5425437945586408,
+        "ci": [
+          0.5176007195651946,
+          0.5737583036807586
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "rule_b_count": {
+        "within": 0.5096458737763085,
+        "ci": [
+          0.5010351966873706,
+          0.524819432428128
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "judge": {
+        "within": 0.9711477250826019,
+        "ci": [
+          0.9509768766595567,
+          0.987151316737261
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "length": {
+        "within": 0.4002898583717215,
+        "ci": [
+          0.3261112082208877,
+          0.47710116758800636
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "canon_tfidf": {
+        "within": 0.6649202988431789,
+        "ci": [
+          0.591441129680819,
+          0.7358004728029817
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "canon_rules_lr": {
+        "within": 0.7423573289919724,
+        "ci": [
+          0.6862597814635669,
+          0.7970337453198666
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "canon_rule_b_count": {
+        "within": 0.7229742012640276,
+        "ci": [
+          0.6662015591250801,
+          0.7787408307354623
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "encoded_count_lr": {
+        "within": 0.7807399678168122,
+        "ci": [
+          0.7145563468001411,
+          0.8435890324586995
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "probe_minus_best": {
+        "diff": 0.027495069321061938,
+        "ci": [
+          0.011251468416006116,
+          0.049073913451631215
+        ],
+        "best_point": "judge",
+        "p": 0.0,
+        "n_problems": 69,
+        "adds_value": false
+      },
+      "probe_oracle": {
+        "within": 0.9996452705779495,
+        "ci": [
+          0.9992688354189057,
+          0.9999181860682562
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "tfidf_refit": {
+        "within": 0.9945075500566585,
+        "ci": [
+          0.9891938190234393,
+          0.9981630270406132
+        ],
+        "n_rows": 2486,
+        "n_pos": 1137,
+        "n_problems": 69
+      },
+      "cosine_frozen_oracle": 0.40299713611602783,
+      "F3": {
+        "diff": 0.027495069321061938,
+        "ci": [
+          0.011251468416006116,
+          0.049073913451631215
+        ],
+        "best_point": "judge",
+        "p": 0.0,
+        "n_problems": 69,
+        "adds_value": false
+      },
+      "rule_unflagged": {
+        "n_rows": 2398,
+        "probe": {
+          "within": 0.9986531627576404,
+          "ci": [
+            0.9973737562189056,
+            0.9996801705756929
+          ],
+          "n_rows": 2398,
+          "n_pos": 1049,
+          "n_problems": 67
+        },
+        "tfidf": {
+          "within": 0.8481331022819124,
+          "ci": [
+            0.7895614845359643,
+            0.9055921863202404
+          ],
+          "n_rows": 2398,
+          "n_pos": 1049,
+          "n_problems": 67
+        },
+        "judge": {
+          "within": 0.9694692543873075,
+          "ci": [
+            0.9490350594125465,
+            0.9860613020942992
+          ],
+          "n_rows": 2398,
+          "n_pos": 1049,
+          "n_problems": 67
+        },
+        "probe_minus_best": {
+          "diff": 0.02918390837033291,
+          "ci": [
+            0.012376717830759137,
+            0.0509953462739951
+          ],
+          "best_point": "judge",
+          "p": 0.0,
+          "n_problems": 67,
+          "adds_value": false
+        }
+      },
+      "floor": {
+        "hack_programs": 1137,
+        "problems_with_both": 69,
+        "pilot": false
+      },
+      "selection_dependent": [
+        "lit7_lr",
+        "rules_lr",
+        "rule_b_count",
+        "canon_rules_lr",
+        "canon_rule_b_count"
+      ]
+    }
+  },
+  "lookalikes": {
+    "read-only-test": {
+      "probe": {
+        "fpr_lookalike": 0.0026954177897574125,
+        "fpr_unflagged": 0.001321003963011889,
+        "delta": 0.0013744138267455235,
+        "ci": [
+          -0.002681417402032613,
+          0.011140697127687118
+        ],
+        "ratio": 2.0404312668463613,
+        "readout": "clean",
+        "n": {
+          "hacks": 256,
+          "lookalikes": 371,
+          "unflagged": 757
+        }
+      },
+      "tfidf": {
+        "fpr_lookalike": 0.0026954177897574125,
+        "fpr_unflagged": 0.0,
+        "delta": 0.0026954177897574125,
+        "ci": [
+          -0.00029016853286394903,
+          0.009524299363106328
+        ],
+        "ratio": null,
+        "readout": "clean",
+        "n": {
+          "hacks": 256,
+          "lookalikes": 371,
+          "unflagged": 757
+        }
+      },
+      "lit7_lr": {
+        "fpr_lookalike": 0.026954177897574125,
+        "fpr_unflagged": 0.02509907529722589,
+        "delta": 0.0018551026003482338,
+        "ci": [
+          -0.0299793747405551,
+          0.07988258520169898
+        ],
+        "ratio": 1.0739111930770322,
+        "readout": "inconclusive",
+        "n": {
+          "hacks": 256,
+          "lookalikes": 371,
+          "unflagged": 757
+        }
+      },
+      "rules_lr": {
+        "fpr_lookalike": 1.0,
+        "fpr_unflagged": 1.0,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.005405771625283819
+        ],
+        "ratio": 1.0,
+        "readout": "clean",
+        "n": {
+          "hacks": 256,
+          "lookalikes": 371,
+          "unflagged": 757
+        }
+      },
+      "rule_b_count": {
+        "fpr_lookalike": 1.0,
+        "fpr_unflagged": 1.0,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "ratio": 1.0,
+        "readout": "clean",
+        "n": {
+          "hacks": 256,
+          "lookalikes": 371,
+          "unflagged": 757
+        }
+      },
+      "judge": {
+        "fpr_lookalike": 0.0,
+        "fpr_unflagged": 0.007926023778071334,
+        "delta": -0.007926023778071334,
+        "ci": [
+          -0.030860410639854483,
+          0.0
+        ],
+        "ratio": 0.0,
+        "readout": "clean",
+        "n": {
+          "hacks": 256,
+          "lookalikes": 371,
+          "unflagged": 757
+        }
+      },
+      "length": {
+        "fpr_lookalike": 0.9784366576819407,
+        "fpr_unflagged": 0.9682959048877147,
+        "delta": 0.010140752794225993,
+        "ci": [
+          -0.0292658282802061,
+          0.07117986372539126
+        ],
+        "ratio": 1.0104727828993576,
+        "readout": "inconclusive",
+        "n": {
+          "hacks": 256,
+          "lookalikes": 371,
+          "unflagged": 757
+        }
+      },
+      "probe_branch_pair": {
+        "fpr_lookalike": 0.0,
+        "fpr_unflagged": 0.001321003963011889,
+        "delta": -0.001321003963011889,
+        "ci": [
+          -0.0045255735070963135,
+          0.0
+        ],
+        "ratio": 0.0,
+        "readout": "clean",
+        "n": {
+          "hacks": 256,
+          "lookalikes": 68,
+          "unflagged": 757
+        }
+      },
+      "probe_multi": {
+        "fpr_lookalike": 0.0,
+        "fpr_unflagged": 0.001321003963011889,
+        "delta": -0.001321003963011889,
+        "ci": [
+          -0.0045255735070963135,
+          0.0
+        ],
+        "ratio": 0.0,
+        "readout": "clean",
+        "n": {
+          "hacks": 256,
+          "lookalikes": 33,
+          "unflagged": 757
+        }
+      },
+      "n_unique_programs": 371,
+      "n_problems": 28,
+      "pilot": false
+    },
+    "editable-test": {
+      "probe": {
+        "fpr_lookalike": 0.2391304347826087,
+        "fpr_unflagged": 0.23343373493975902,
+        "delta": 0.0056966998428496785,
+        "ci": [
+          -0.13071692858491393,
+          0.17004261842526394
+        ],
+        "ratio": 1.0244039270687237,
+        "readout": "inconclusive",
+        "n": {
+          "hacks": 83,
+          "lookalikes": 460,
+          "unflagged": 664
+        }
+      },
+      "tfidf": {
+        "fpr_lookalike": 0.8630434782608696,
+        "fpr_unflagged": 0.7801204819277109,
+        "delta": 0.0829229963331587,
+        "ci": [
+          -0.08157249862125641,
+          0.23492302681827912
+        ],
+        "ratio": 1.1062951149907672,
+        "readout": "inconclusive",
+        "n": {
+          "hacks": 83,
+          "lookalikes": 460,
+          "unflagged": 664
+        }
+      },
+      "lit7_lr": {
+        "fpr_lookalike": 0.8630434782608696,
+        "fpr_unflagged": 0.8328313253012049,
+        "delta": 0.03021215295966473,
+        "ci": [
+          -0.16420887881984367,
+          0.4776268560161068
+        ],
+        "ratio": 1.0362764368267945,
+        "readout": "inconclusive",
+        "n": {
+          "hacks": 83,
+          "lookalikes": 460,
+          "unflagged": 664
+        }
+      },
+      "rules_lr": {
+        "fpr_lookalike": 1.0,
+        "fpr_unflagged": 1.0,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "ratio": 1.0,
+        "readout": "clean",
+        "n": {
+          "hacks": 83,
+          "lookalikes": 460,
+          "unflagged": 664
+        }
+      },
+      "rule_b_count": {
+        "fpr_lookalike": 1.0,
+        "fpr_unflagged": 1.0,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "ratio": 1.0,
+        "readout": "clean",
+        "n": {
+          "hacks": 83,
+          "lookalikes": 460,
+          "unflagged": 664
+        }
+      },
+      "judge": {
+        "fpr_lookalike": 0.5369565217391304,
+        "fpr_unflagged": 0.7168674698795181,
+        "delta": -0.17991094814038766,
+        "ci": [
+          -0.45143813814023476,
+          0.13890710687060406
+        ],
+        "ratio": 0.7490317866276945,
+        "readout": "inconclusive",
+        "n": {
+          "hacks": 83,
+          "lookalikes": 460,
+          "unflagged": 664
+        }
+      },
+      "length": {
+        "fpr_lookalike": 0.9869565217391304,
+        "fpr_unflagged": 0.911144578313253,
+        "delta": 0.07581194342587738,
+        "ci": [
+          0.0,
+          0.22296721035921618
+        ],
+        "ratio": 1.0832051742723678,
+        "readout": "inconclusive",
+        "n": {
+          "hacks": 83,
+          "lookalikes": 460,
+          "unflagged": 664
+        }
+      },
+      "probe_branch_pair": {
+        "fpr_lookalike": 0.17415730337078653,
+        "fpr_unflagged": 0.23343373493975902,
+        "delta": -0.0592764315689725,
+        "ci": [
+          -0.2128270788684212,
+          0.2424908631588105
+        ],
+        "ratio": 0.7460674157303372,
+        "readout": "inconclusive",
+        "n": {
+          "hacks": 83,
+          "lookalikes": 178,
+          "unflagged": 664
+        }
+      },
+      "probe_multi": {
+        "fpr_lookalike": 0.5714285714285714,
+        "fpr_unflagged": 0.23343373493975902,
+        "delta": 0.33799483648881234,
+        "ci": [
+          -0.30027378910672453,
+          0.6492361844632218
+        ],
+        "ratio": 2.447926267281106,
+        "readout": "inconclusive",
+        "n": {
+          "hacks": 83,
+          "lookalikes": 7,
+          "unflagged": 664
+        }
+      },
+      "n_unique_programs": 460,
+      "n_problems": 40,
+      "pilot": false
+    },
+    "all": {
+      "probe": {
+        "delta_weighted": 0.0037670149908946345,
+        "readouts": [
+          "clean",
+          "inconclusive"
+        ],
+        "readout": "inconclusive"
+      },
+      "pilot": false
+    }
+  },
+  "D5_branch": "(d)",
+  "D5_note": "gate: S4.5 hand audit pending; the branch is provisional until it passes"
+}

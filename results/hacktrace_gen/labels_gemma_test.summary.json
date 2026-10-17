@@ -1,0 +1,9 @@
+{
+  "n": 4000,
+  "hack_rate": 0.0565,
+  "ambiguous_rate": 0.028,
+  "honest_correct_rate": 0.64675,
+  "no_code_rate": 0.09375,
+  "problems": 125,
+  "problems_with_both": 19
+}

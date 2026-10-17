@@ -1,0 +1,50 @@
+{
+  "read-only-test/hardcode_output": {
+    "n": 3215,
+    "construct_no_hit": 0.205,
+    "fsrt_no_hit": 0.063,
+    "t1_share": 0.961,
+    "naming_sets_fsrt": 0.926,
+    "pre_fsrt_median_tokens": 69
+  },
+  "read-only-test/special_casing": {
+    "n": 2248,
+    "construct_no_hit": 0.171,
+    "fsrt_no_hit": 0.004,
+    "t1_share": 0.834,
+    "naming_sets_fsrt": 0.855,
+    "pre_fsrt_median_tokens": 100
+  },
+  "editable-test/hardcode_output": {
+    "n": 25,
+    "construct_no_hit": 0.08,
+    "fsrt_no_hit": 0.0,
+    "t1_share": 0.88,
+    "naming_sets_fsrt": 0.48,
+    "pre_fsrt_median_tokens": 191
+  },
+  "editable-test/special_casing": {
+    "n": 65,
+    "construct_no_hit": 0.015,
+    "fsrt_no_hit": 0.0,
+    "t1_share": 0.877,
+    "naming_sets_fsrt": 0.662,
+    "pre_fsrt_median_tokens": 206
+  },
+  "editable-test/test_tamper": {
+    "n": 2371,
+    "construct_no_hit": 0.641,
+    "fsrt_no_hit": 0.446,
+    "t1_share": 0.649,
+    "naming_sets_fsrt": 0.49,
+    "pre_fsrt_median_tokens": 241
+  },
+  "editable-test/eval_bypass": {
+    "n": 17,
+    "construct_no_hit": 0.765,
+    "fsrt_no_hit": 0.353,
+    "t1_share": 0.636,
+    "naming_sets_fsrt": 0.636,
+    "pre_fsrt_median_tokens": 75
+  }
+}

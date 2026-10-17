@@ -1,0 +1,30 @@
+{
+  "split": "test",
+  "readonly_ACT1": {
+    "n_rows": 5466,
+    "n_unique_programs": 1922,
+    "n_problems": 88,
+    "dup_share": 0.648
+  },
+  "readonly_ACT0": {
+    "n_rows": 19886,
+    "n_unique_programs": 14774,
+    "n_problems": 121,
+    "dup_share": 0.257
+  },
+  "editable_ACT1": {
+    "n_rows": 2478,
+    "n_unique_programs": 1610,
+    "n_problems": 155,
+    "dup_share": 0.35
+  },
+  "editable_ACT0": {
+    "n_rows": 12722,
+    "n_unique_programs": 10524,
+    "n_problems": 190,
+    "dup_share": 0.173
+  },
+  "artefact_test_tamper": 1420,
+  "test_tamper_rows": 2371,
+  "artefact_editable_ACT0": 4
+}

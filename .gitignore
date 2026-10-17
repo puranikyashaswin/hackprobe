@@ -1,0 +1,21 @@
+# environments
+.venv/
+env/*/
+__pycache__/
+*.pyc
+.DS_Store
+
+# raw data, activations and weights are never committed (download with the label/ scripts)
+data/*
+!data/.gitkeep
+acts/
+*.npy
+*.safetensors
+private/*
+
+# LaTeX build output
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg

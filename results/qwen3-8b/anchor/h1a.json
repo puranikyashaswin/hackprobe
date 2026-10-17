@@ -1,0 +1,47 @@
+{
+  "shuffled_labels": false,
+  "read-only-test": {
+    "probe_pooled": 0.7779418977965843,
+    "probe_within": 0.5,
+    "layer": 36,
+    "C": 0.01,
+    "cv_pooled": 0.7643884892086331,
+    "prompt_feature_pooled": 0.536427173859164,
+    "gain_over_prompt_features": 0.24151472393742024,
+    "gain_ci": [
+      0.14030187195036536,
+      0.3448314088229663
+    ],
+    "solvability_pooled": 0.6424865237157322,
+    "probe_minus_solvability_ci": [
+      0.05542374884617646,
+      0.21525745357336212
+    ],
+    "solvability_matches": false,
+    "D3a_branch": "(a)",
+    "n_test_rows": 25352,
+    "n_test_problems": 125
+  },
+  "editable-test": {
+    "probe_pooled": 0.716947528440498,
+    "probe_within": 0.5,
+    "layer": 32,
+    "C": 0.01,
+    "cv_pooled": 0.7511256016146561,
+    "prompt_feature_pooled": 0.5663856716657284,
+    "gain_over_prompt_features": 0.15056185677476963,
+    "gain_ci": [
+      0.06560241855025756,
+      0.2345444644783582
+    ],
+    "solvability_pooled": 0.6206715305980158,
+    "probe_minus_solvability_ci": [
+      0.014496169742865423,
+      0.18609729767325092
+    ],
+    "solvability_matches": false,
+    "D3a_branch": "(a)",
+    "n_test_rows": 15200,
+    "n_test_problems": 190
+  }
+}

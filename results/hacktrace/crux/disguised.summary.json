@@ -1,0 +1,86 @@
+{
+  "test": {
+    "hack": {
+      "programs": 1148,
+      "parse_ok": 1148,
+      "executed": 1148,
+      "dict_changed": 0.8013937282229965,
+      "control_applied": 0.1524390243902439,
+      "renamed_any": 1.0,
+      "mean_encoded_constants": 5.4869337979094075,
+      "kept_surface": 1137,
+      "kept_share_surface": 0.990418118466899,
+      "problems_surface": 73,
+      "kept_full": 1137,
+      "kept_share_full": 0.990418118466899,
+      "problems_full": 73
+    },
+    "act0": {
+      "programs": 8146,
+      "parse_ok": 7640,
+      "executed": 1353,
+      "dict_changed": 0.1412303664921466,
+      "control_applied": 0.09201570680628272,
+      "renamed_any": 1.0,
+      "mean_encoded_constants": 1.7227748691099476,
+      "kept_surface": 1349,
+      "kept_share_surface": 0.9970436067997044,
+      "problems_surface": 69,
+      "kept_full": 1349,
+      "kept_share_full": 0.9970436067997044,
+      "problems_full": 69
+    },
+    "surface_cell": {
+      "hack_programs": 1137,
+      "problems_with_both_classes": 69,
+      "floor_300_from_60": true
+    },
+    "full_cell": {
+      "hack_programs": 1137,
+      "problems_with_both_classes": 69,
+      "floor_300_from_60": true
+    }
+  },
+  "train": {
+    "hack": {
+      "programs": 611,
+      "parse_ok": 611,
+      "executed": 611,
+      "dict_changed": 0.7577741407528642,
+      "control_applied": 0.2193126022913257,
+      "renamed_any": 1.0,
+      "mean_encoded_constants": 6.189852700490999,
+      "kept_surface": 611,
+      "kept_share_surface": 1.0,
+      "problems_surface": 131,
+      "kept_full": 611,
+      "kept_share_full": 1.0,
+      "problems_full": 131
+    },
+    "act0": {
+      "programs": 811,
+      "parse_ok": 761,
+      "executed": 761,
+      "dict_changed": 0.11826544021024968,
+      "control_applied": 0.16031537450722733,
+      "renamed_any": 1.0,
+      "mean_encoded_constants": 1.9868593955321945,
+      "kept_surface": 759,
+      "kept_share_surface": 0.9973718791064389,
+      "problems_surface": 134,
+      "kept_full": 759,
+      "kept_share_full": 0.9973718791064389,
+      "problems_full": 134
+    },
+    "surface_cell": {
+      "hack_programs": 611,
+      "problems_with_both_classes": 117,
+      "floor_300_from_60": true
+    },
+    "full_cell": {
+      "hack_programs": 611,
+      "problems_with_both_classes": 117,
+      "floor_300_from_60": true
+    }
+  }
+}

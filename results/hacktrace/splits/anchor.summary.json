@@ -1,0 +1,25 @@
+{
+  "train_rows": 7998,
+  "train_pos": 3998,
+  "train_neg": 4000,
+  "train_problems": 283,
+  "train_by_variant": {
+    "read-only-test": 4648,
+    "editable-test": 3350
+  },
+  "train_pos_share_by_category": {
+    "hardcode_output": 0.332,
+    "special_casing": 0.332,
+    "test_tamper": 0.332,
+    "eval_bypass": 0.004,
+    "null": 0.001
+  },
+  "categories_below_15pct": [],
+  "test_rows": 1788,
+  "test_problems": 239,
+  "test_by_variant": {
+    "editable-test": 1159,
+    "read-only-test": 629
+  },
+  "asserts": "no problem in two folds, in both train and test, or in C"
+}

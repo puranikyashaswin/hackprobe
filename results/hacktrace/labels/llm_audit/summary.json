@@ -1,0 +1,131 @@
+{
+  "annotators": {
+    "claude-opus-5.5": "us.anthropic.claude-opus-5-5",
+    "gpt-6-astra": "global.openai.gpt-6-astra",
+    "deepseek-v3.2": "deepseek.v3.2"
+  },
+  "note": "LLM annotators, blind to labels and to each other; not human annotation",
+  "claude-opus-5.5": {
+    "fsrt": {
+      "within_3": 40,
+      "n": 60,
+      "pass_54": false,
+      "median_abs_offset": 2,
+      "unparsed": 0
+    },
+    "audit": {
+      "ordinary": {
+        "agree": 25,
+        "n": 25,
+        "pass": true
+      },
+      "transformed_honest": {
+        "agree": 23,
+        "n": 25,
+        "pass": false
+      },
+      "lookalike": {
+        "agree": 25,
+        "n": 25,
+        "pass": true
+      },
+      "transformed_hack": {
+        "agree": 25,
+        "n": 25,
+        "pass": true
+      },
+      "unparsed": 0
+    }
+  },
+  "gpt-6-astra": {
+    "fsrt": {
+      "within_3": 45,
+      "n": 60,
+      "pass_54": false,
+      "median_abs_offset": 1,
+      "unparsed": 0
+    },
+    "audit": {
+      "ordinary": {
+        "agree": 25,
+        "n": 25,
+        "pass": true
+      },
+      "transformed_honest": {
+        "agree": 24,
+        "n": 25,
+        "pass": true
+      },
+      "lookalike": {
+        "agree": 25,
+        "n": 25,
+        "pass": true
+      },
+      "transformed_hack": {
+        "agree": 25,
+        "n": 25,
+        "pass": true
+      },
+      "unparsed": 0
+    }
+  },
+  "deepseek-v3.2": {
+    "fsrt": {
+      "within_3": 10,
+      "n": 60,
+      "pass_54": false,
+      "median_abs_offset": 44,
+      "unparsed": 0
+    },
+    "audit": {
+      "ordinary": {
+        "agree": 23,
+        "n": 25,
+        "pass": false
+      },
+      "transformed_honest": {
+        "agree": 21,
+        "n": 25,
+        "pass": false
+      },
+      "lookalike": {
+        "agree": 23,
+        "n": 25,
+        "pass": false
+      },
+      "transformed_hack": {
+        "agree": 25,
+        "n": 25,
+        "pass": true
+      },
+      "unparsed": 0
+    }
+  },
+  "kappa_pairwise": {
+    "claude-opus-5.5 vs gpt-6-astra": 0.9790794979079498,
+    "claude-opus-5.5 vs deepseek-v3.2": 0.83739837398374,
+    "gpt-6-astra vs deepseek-v3.2": 0.8574918566775245
+  },
+  "majority_vote_audit": {
+    "ordinary": {
+      "agree": 25,
+      "n": 25,
+      "pass": true
+    },
+    "transformed_honest": {
+      "agree": 24,
+      "n": 25,
+      "pass": true
+    },
+    "lookalike": {
+      "agree": 25,
+      "n": 25,
+      "pass": true
+    },
+    "transformed_hack": {
+      "agree": 25,
+      "n": 25,
+      "pass": true
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# CPU analyses: replay statistics, fair comparison, figures, tests
+numpy==2.5.4
+pyarrow==26.0.0
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+torch==2.14.1
+transformers==5.17.0
+tokenizers==0.23.3
+huggingface-hub==1.33.0
+pytest==9.1.1

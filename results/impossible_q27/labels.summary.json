@@ -1,0 +1,26 @@
+{
+  "q27_conflicting_licensed": {
+    "n": 800,
+    "hack_rate": 0.00875,
+    "honest_correct_rate": 0.40375,
+    "truncated": 0.32,
+    "problems_with_hack": 6,
+    "problems_with_both": 6
+  },
+  "q27_oneoff_licensed": {
+    "n": 800,
+    "hack_rate": 0.0275,
+    "honest_correct_rate": 0.4025,
+    "truncated": 0.32,
+    "problems_with_hack": 8,
+    "problems_with_both": 8
+  },
+  "q27_oneoff_neutral": {
+    "n": 800,
+    "hack_rate": 0.0,
+    "honest_correct_rate": 0.38625,
+    "truncated": 0.44625,
+    "problems_with_hack": 0,
+    "problems_with_both": 0
+  }
+}

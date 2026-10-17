@@ -1,0 +1,8 @@
+{
+  "datasets": {
+    "JH012/HackTrace-Data": "291cf50ffc3cb4d2af42ade5e0cd728cb0037312"
+  },
+  "models": {
+    "Qwen/Qwen3-8B": "b968826d9c46dd6066d109eabc6255188de91218"
+  }
+}

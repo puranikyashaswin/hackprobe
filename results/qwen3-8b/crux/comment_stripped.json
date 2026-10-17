@@ -1,0 +1,270 @@
+{
+  "read-only-test": {
+    "layer": 19,
+    "C": 0.01,
+    "judge_text": "final assistant turn's blocks (scored at extraction)",
+    "detectors": {
+      "probe_frozen": {
+        "orig": 0.9966517857142857,
+        "stripped": 0.9973958333333334,
+        "delta": 0.000744047619047619,
+        "ci": [
+          0.0,
+          0.002232142857142857
+        ],
+        "verdict": "holds"
+      },
+      "probe_black_control": {
+        "orig": 0.9966517857142857,
+        "stripped": 0.9966517857142857,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "verdict": "holds"
+      },
+      "tfidf_frozen": {
+        "orig": 0.9929315476190477,
+        "stripped": 0.9683779761904762,
+        "delta": -0.024553571428571428,
+        "ci": [
+          -0.049107142857142856,
+          -0.005952380952380952
+        ],
+        "verdict": "holds"
+      },
+      "visible_literal_frozen": {
+        "orig": 0.9363839285714286,
+        "stripped": 0.9453125,
+        "delta": 0.008928571428571428,
+        "ci": [
+          -0.004464285714285714,
+          0.022321428571428572
+        ],
+        "verdict": "holds"
+      },
+      "length_only": {
+        "orig": 0.33717757936507936,
+        "stripped": 0.31101190476190477,
+        "delta": -0.0261656746031746,
+        "ci": [
+          -0.07788628472222221,
+          0.02381572420634917
+        ],
+        "verdict": "holds"
+      },
+      "judge": {
+        "orig": 0.9936755952380952,
+        "stripped": 0.9873511904761905,
+        "delta": -0.006324404761904762,
+        "ci": [
+          -0.020089285714285716,
+          0.004092261904761905
+        ],
+        "verdict": "holds"
+      }
+    },
+    "refit": {
+      "probe_oracle_stripped": 0.9966517857142857,
+      "tfidf_refit_stripped": 0.9691220238095238
+    },
+    "cosine_frozen_oracle": 0.7654117345809937,
+    "by_category": {
+      "hardcode_output": {
+        "probe_frozen": {
+          "orig": 0.994073275862069,
+          "stripped": 0.994073275862069,
+          "delta": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "verdict": "holds"
+        },
+        "tfidf_frozen": {
+          "orig": 0.9983836206896551,
+          "stripped": 0.9983836206896551,
+          "delta": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "verdict": "holds"
+        }
+      },
+      "special_casing": {
+        "probe_frozen": {
+          "orig": 0.9974856321839082,
+          "stripped": 0.9989224137931034,
+          "delta": 0.001436781609195403,
+          "ci": [
+            0.0,
+            0.004310344827586209
+          ],
+          "verdict": "holds"
+        },
+        "tfidf_frozen": {
+          "orig": 0.9913793103448276,
+          "stripped": 0.9558189655172413,
+          "delta": -0.03556034482758621,
+          "ci": [
+            -0.07004310344827586,
+            -0.007543103448275862
+          ],
+          "verdict": "drops"
+        }
+      }
+    },
+    "transform_stats": {
+      "orig_test": {
+        "fallback_blocks_by_class": [
+          0,
+          0
+        ],
+        "prose_lines_removed": 0,
+        "black_failures": 0
+      },
+      "stripped_test": {
+        "fallback_blocks_by_class": [
+          12,
+          18
+        ],
+        "prose_lines_removed": 78,
+        "black_failures": 0
+      },
+      "black_test": {
+        "fallback_blocks_by_class": [
+          0,
+          0
+        ],
+        "prose_lines_removed": 0,
+        "black_failures": 105
+      }
+    },
+    "D4_branch": "(a')"
+  },
+  "editable-test": {
+    "layer": 4,
+    "C": 0.1,
+    "judge_text": "final assistant turn's blocks (scored at extraction)",
+    "detectors": {
+      "probe_frozen": {
+        "orig": 0.9571236559139784,
+        "stripped": 0.9495967741935484,
+        "delta": -0.00752688172043011,
+        "ci": [
+          -0.020026881720430108,
+          0.0051075268817204296
+        ],
+        "verdict": "holds"
+      },
+      "probe_black_control": {
+        "orig": 0.9571236559139784,
+        "stripped": 0.9325268817204302,
+        "delta": -0.024596774193548384,
+        "ci": [
+          -0.038172043010752686,
+          -0.012631048387096793
+        ],
+        "verdict": "holds"
+      },
+      "tfidf_frozen": {
+        "orig": 0.9064516129032258,
+        "stripped": 0.9182795698924732,
+        "delta": 0.011827956989247313,
+        "ci": [
+          -0.0009442204301075269,
+          0.026347446236559127
+        ],
+        "verdict": "holds"
+      },
+      "visible_literal_frozen": {
+        "orig": 0.6398521505376344,
+        "stripped": 0.6453629032258065,
+        "delta": 0.005510752688172042,
+        "ci": [
+          -0.008336693548387097,
+          0.022044690860215044
+        ],
+        "verdict": "holds"
+      },
+      "length_only": {
+        "orig": 0.36928763440860213,
+        "stripped": 0.3814516129032258,
+        "delta": 0.012163978494623657,
+        "ci": [
+          -0.017815860215053762,
+          0.0405241935483871
+        ],
+        "verdict": "holds"
+      },
+      "judge": {
+        "orig": 0.6911962365591398,
+        "stripped": 0.6885752688172042,
+        "delta": -0.0026209677419354845,
+        "ci": [
+          -0.03205645161290323,
+          0.025678763440860175
+        ],
+        "verdict": "holds"
+      }
+    },
+    "refit": {
+      "probe_oracle_stripped": 0.9502688172043012,
+      "tfidf_refit_stripped": 0.9201612903225806
+    },
+    "cosine_frozen_oracle": 0.7835527062416077,
+    "by_category": {
+      "test_tamper": {
+        "probe_frozen": {
+          "orig": 0.961038961038961,
+          "stripped": 0.9552218614718616,
+          "delta": -0.005817099567099567,
+          "ci": [
+            -0.0174512987012987,
+            0.007440476190476188
+          ],
+          "verdict": "holds"
+        },
+        "tfidf_frozen": {
+          "orig": 0.912878787878788,
+          "stripped": 0.930465367965368,
+          "delta": 0.017586580086580088,
+          "ci": [
+            0.004055059523809523,
+            0.0334212662337662
+          ],
+          "verdict": "holds"
+        }
+      }
+    },
+    "transform_stats": {
+      "orig_test": {
+        "fallback_blocks_by_class": [
+          0,
+          0
+        ],
+        "prose_lines_removed": 0,
+        "black_failures": 0
+      },
+      "stripped_test": {
+        "fallback_blocks_by_class": [
+          142,
+          602
+        ],
+        "prose_lines_removed": 469,
+        "black_failures": 0
+      },
+      "black_test": {
+        "fallback_blocks_by_class": [
+          0,
+          0
+        ],
+        "prose_lines_removed": 0,
+        "black_failures": 1105
+      }
+    },
+    "D4_branch": "(a')"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "n": 9056,
+  "hack_rate": 0.042623674911660775,
+  "ambiguous_rate": 0.07575088339222615,
+  "honest_correct_rate": 0.6178224381625441,
+  "no_code_rate": 0.08822879858657244,
+  "problems": 283,
+  "problems_with_both": 37
+}

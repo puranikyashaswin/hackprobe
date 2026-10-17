@@ -1,0 +1,22 @@
+{
+  "seed": 20261014,
+  "train_problems": 375,
+  "opened": 173,
+  "candidates": 202,
+  "candidate_both_class_readonly": 154,
+  "candidates_by_tier": {
+    "cc_easy_tr": 30,
+    "cc_hard_tr": 93,
+    "cc_med_tr": 79
+  },
+  "fraction": 0.45,
+  "size": 92,
+  "both_class_readonly": 72,
+  "train_left": 283,
+  "sha256": "53c3bef12c05cd2a5f9679078e1a6c2ab85c9b012059734b4d98f07e679db7b5",
+  "by_tier": {
+    "cc_easy_tr": 14,
+    "cc_hard_tr": 42,
+    "cc_med_tr": 36
+  }
+}

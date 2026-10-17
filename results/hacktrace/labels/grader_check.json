@@ -1,0 +1,12 @@
+{
+  "rows": 300,
+  "visible_match": 300,
+  "visible_mismatch_kinds": {},
+  "hidden_rows": 200,
+  "hidden_match_rule_all": 200,
+  "hidden_match_rule_first12": 200,
+  "hidden_rows_with_timeouts": 5,
+  "rows_where_a_hidden_case_equals_visible": 13,
+  "pass_visible": true,
+  "pass_hidden": true
+}

@@ -1,0 +1,7 @@
+# GPU extraction and probing (Qwen3-8B, Gemma-4-12B-it); generation for the second model used vLLM 0.31.0 in a separate environment
+torch==2.13.0
+transformers==5.17.0
+numpy==2.5.4
+pyarrow==26.0.0
+scikit-learn==1.9.1
+huggingface-hub==1.33.0

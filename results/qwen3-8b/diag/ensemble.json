@@ -1,0 +1,107 @@
+{
+  "note": "exploratory OR-rule monitors; thresholds chosen jointly on the development calibration half (FA <= 5%)",
+  "combos": {
+    "probe+tfidf_all": {
+      "streams": [
+        "causal19_w16",
+        "tfidf_all"
+      ],
+      "thresholds": [
+        3.09088315486909,
+        4.900516033172607
+      ],
+      "calibration": {
+        "false_alarm": 0.04743083003952569,
+        "before_action": 0.8356164383561644,
+        "before_fsrt": 0.0547945205479452
+      },
+      "development_eval_half": {
+        "false_alarm": 0.13452914798206278,
+        "before_action": 0.7912087912087912,
+        "before_fsrt": 0.11538461538461539
+      },
+      "set_C": {
+        "false_alarm": 0.06701030927835051,
+        "before_action": 0.8668730650154799,
+        "before_fsrt": 0.058823529411764705
+      }
+    },
+    "probe+judge": {
+      "streams": [
+        "causal19_w16",
+        "judge"
+      ],
+      "thresholds": [
+        3.8667064714431767,
+        7.0
+      ],
+      "calibration": {
+        "false_alarm": 0.04743083003952569,
+        "before_action": 0.8493150684931506,
+        "before_fsrt": 0.0684931506849315
+      },
+      "development_eval_half": {
+        "false_alarm": 0.10762331838565023,
+        "before_action": 0.7747252747252747,
+        "before_fsrt": 0.1043956043956044
+      },
+      "set_C": {
+        "false_alarm": 0.059278350515463915,
+        "before_action": 0.8575851393188855,
+        "before_fsrt": 0.06191950464396285
+      }
+    },
+    "tfidf_all+judge": {
+      "streams": [
+        "tfidf_all",
+        "judge"
+      ],
+      "thresholds": [
+        2.1042425632476807,
+        7.0
+      ],
+      "calibration": {
+        "false_alarm": 0.039525691699604744,
+        "before_action": 0.7808219178082192,
+        "before_fsrt": 0.1187214611872146
+      },
+      "development_eval_half": {
+        "false_alarm": 0.08520179372197309,
+        "before_action": 0.7307692307692307,
+        "before_fsrt": 0.12087912087912088
+      },
+      "set_C": {
+        "false_alarm": 0.05154639175257732,
+        "before_action": 0.7616099071207431,
+        "before_fsrt": 0.06191950464396285
+      }
+    },
+    "probe+tfidf_all+judge": {
+      "streams": [
+        "causal19_w16",
+        "tfidf_all",
+        "judge"
+      ],
+      "thresholds": [
+        3.8667064714431767,
+        4.900516033172607,
+        7.0
+      ],
+      "calibration": {
+        "false_alarm": 0.04743083003952569,
+        "before_action": 0.8493150684931506,
+        "before_fsrt": 0.0684931506849315
+      },
+      "development_eval_half": {
+        "false_alarm": 0.10762331838565023,
+        "before_action": 0.7747252747252747,
+        "before_fsrt": 0.1043956043956044
+      },
+      "set_C": {
+        "false_alarm": 0.059278350515463915,
+        "before_action": 0.8575851393188855,
+        "before_fsrt": 0.06191950464396285
+      }
+    }
+  }
+}

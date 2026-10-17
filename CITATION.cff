@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the paper."
+title: "hackprobe: a pre-registered test of early warning of reward hacking from a coding model's activations"
+authors:
+  - family-names: Sharma
+    given-names: Puranik Yashaswin
+    email: puranikyashaswinsharma@gmail.com
+license: Apache-2.0
+repository-code: "https://github.com/puranikyashaswin/hackprobe"
+preferred-citation:
+  type: article
+  title: "Do a Coding Model's Activations Warn of Test-Gaming Earlier than Its Text? A Pre-registered Test"
+  authors:
+    - family-names: Sharma
+      given-names: Puranik Yashaswin
+  year: 2026

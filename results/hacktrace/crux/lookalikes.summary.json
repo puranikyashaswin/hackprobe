@@ -1,0 +1,66 @@
+{
+  "read-only-test": {
+    "broad": {
+      "n_unique_programs": 371,
+      "n_problems": 28
+    },
+    "branch_pair": {
+      "n_unique_programs": 68,
+      "n_problems": 11
+    },
+    "multi": {
+      "n_unique_programs": 33,
+      "n_problems": 5
+    },
+    "unflagged": {
+      "n_unique_programs": 1008,
+      "n_problems": 30
+    },
+    "broad_top5_programs": 203,
+    "honest_correct_programs_in_hacked_problems": 1379
+  },
+  "editable-test": {
+    "broad": {
+      "n_unique_programs": 460,
+      "n_problems": 40
+    },
+    "branch_pair": {
+      "n_unique_programs": 178,
+      "n_problems": 15
+    },
+    "multi": {
+      "n_unique_programs": 7,
+      "n_problems": 4
+    },
+    "unflagged": {
+      "n_unique_programs": 987,
+      "n_problems": 50
+    },
+    "broad_top5_programs": 296,
+    "honest_correct_programs_in_hacked_problems": 1450
+  },
+  "all": {
+    "broad": {
+      "n_unique_programs": 831,
+      "n_problems": 68
+    },
+    "branch_pair": {
+      "n_unique_programs": 246,
+      "n_problems": 26
+    },
+    "multi": {
+      "n_unique_programs": 40,
+      "n_problems": 9
+    },
+    "unflagged": {
+      "n_unique_programs": 1995,
+      "n_problems": 80
+    },
+    "broad_top5_programs": 349,
+    "honest_correct_programs_in_hacked_problems": 2829
+  },
+  "floor": {
+    "rule": ">= 100 unique programs from >= 20 problems (D5 (f))",
+    "broad_passes": true
+  }
+}

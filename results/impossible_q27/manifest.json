@@ -1,0 +1,18 @@
+{
+  "dataset": "fjzzq2002/impossible_livecodebench",
+  "revision": "98650ffc3f28a01b261669b6d19fcd7773823710",
+  "files": {
+    "conflicting": {
+      "sha256": "9a13116c6cf48e8c2dc64ca2facdac4122aad30fe1aa52ab552a3b35638c22c8",
+      "bytes": 287893
+    },
+    "oneoff": {
+      "sha256": "31a89b06195a223268c4e66ea9ae87c5ed5b744bb7d230ed950d2e012c2c6c56",
+      "bytes": 294258
+    },
+    "original": {
+      "sha256": "3f128b7a8419fd4f2d1c11f3eca7cd5bceac0e2385810950e926276d07a784c5",
+      "bytes": 293399
+    }
+  }
+}

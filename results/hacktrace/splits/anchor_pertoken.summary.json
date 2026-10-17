@@ -1,0 +1,30 @@
+{
+  "test": {
+    "A": {
+      "rows": 600,
+      "problems": 60,
+      "hacks": 300,
+      "tokens_stored": 103298
+    },
+    "B": {
+      "rows": 290,
+      "problems": 44,
+      "hacks": 101,
+      "tokens_stored": 74385
+    }
+  },
+  "train": {
+    "A": {
+      "rows": 1000,
+      "problems": 100,
+      "hacks": 500,
+      "tokens_stored": 177084
+    },
+    "B": {
+      "rows": 0,
+      "problems": 0,
+      "hacks": 0,
+      "tokens_stored": 0
+    }
+  }
+}

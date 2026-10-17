@@ -1,0 +1,48 @@
+{
+  "read-only-test": {
+    "view1_honest_correct_negatives": {
+      "within": 0.9998076923076923,
+      "ci": [
+        0.9994230769230767,
+        1.0
+      ],
+      "n_rows": 667,
+      "n_pos": 300,
+      "n_problems": 20,
+      "underpowered": true
+    },
+    "view2_problem_final_turn": {
+      "within": 0.9760416666666667,
+      "ci": [
+        0.9364583333333333,
+        1.0
+      ],
+      "n_rows": 629,
+      "n_pos": 294,
+      "n_problems": 60
+    }
+  },
+  "editable-test": {
+    "view1_honest_correct_negatives": {
+      "within": 0.9733691989554993,
+      "ci": [
+        0.9357210221409138,
+        0.9960030187713043
+      ],
+      "n_rows": 963,
+      "n_pos": 433,
+      "n_problems": 34,
+      "underpowered": true
+    },
+    "view2_problem_final_turn": {
+      "within": 0.9477097130242825,
+      "ci": [
+        0.929635761589404,
+        0.9641280353200882
+      ],
+      "n_rows": 1159,
+      "n_pos": 541,
+      "n_problems": 151
+    }
+  }
+}

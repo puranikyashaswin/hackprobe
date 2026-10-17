@@ -1,0 +1,18 @@
+{
+  "read-only-test/hardcode_output": {
+    "n": 6944,
+    "construct_no_hit": 0.179,
+    "fsrt_no_hit": 0.021,
+    "t1_share": 0.973,
+    "naming_sets_fsrt": 0.874,
+    "pre_fsrt_median_tokens": 73
+  },
+  "read-only-test/special_casing": {
+    "n": 4818,
+    "construct_no_hit": 0.251,
+    "fsrt_no_hit": 0.028,
+    "t1_share": 0.899,
+    "naming_sets_fsrt": 0.84,
+    "pre_fsrt_median_tokens": 96
+  }
+}

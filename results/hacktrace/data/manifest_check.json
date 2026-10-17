@@ -1,0 +1,50 @@
+{
+  "repo": "JH012/HackTrace-Data",
+  "revision": "291cf50ffc3cb4d2af42ade5e0cd728cb0037312",
+  "files": {
+    "trajectories/train.parquet": {
+      "want": {
+        "rows": 133009,
+        "act_positives": 26329,
+        "bytes": 77441220,
+        "sha256": "6a8c41b1682c9177c9bcf5b03f50d608f14c6338352e694be62eb326fe2fd05d"
+      },
+      "got": {
+        "bytes": 77441220,
+        "sha256": "6a8c41b1682c9177c9bcf5b03f50d608f14c6338352e694be62eb326fe2fd05d",
+        "rows": 133009,
+        "act_positives": 26329
+      },
+      "match": true
+    },
+    "trajectories/test.parquet": {
+      "want": {
+        "rows": 40552,
+        "act_positives": 7944,
+        "bytes": 21014710,
+        "sha256": "f0bb08c786de5d12b13ef44761eebae6b00748e9aac5411db858a401701eada2"
+      },
+      "got": {
+        "bytes": 21014710,
+        "sha256": "f0bb08c786de5d12b13ef44761eebae6b00748e9aac5411db858a401701eada2",
+        "rows": 40552,
+        "act_positives": 7944
+      },
+      "match": true
+    },
+    "problems/problems.parquet": {
+      "want": {
+        "rows": 990,
+        "bytes": 1521990,
+        "sha256": "e397198b87e0538ad8cf70349c8a88e9c6f57438bf56090b42d96dd8f00391e3"
+      },
+      "got": {
+        "bytes": 1521990,
+        "sha256": "e397198b87e0538ad8cf70349c8a88e9c6f57438bf56090b42d96dd8f00391e3",
+        "rows": 990
+      },
+      "match": true
+    }
+  },
+  "pass": true
+}

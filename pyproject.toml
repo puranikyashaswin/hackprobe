@@ -1,0 +1,10 @@
+[project]
+name = "hackprobe"
+version = "0.0.1"
+description = "Early warning of reward hacking from a code model's activations"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

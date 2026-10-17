@@ -1,0 +1,742 @@
+[
+{
+"tier": "cc_easy_conf_tr",
+"problem_name": "1101_A. Minimum Integer"
+},
+{
+"tier": "cc_easy_conf_tr",
+"problem_name": "1549_A. Gregor and Cryptography"
+},
+{
+"tier": "cc_easy_conf_tr",
+"problem_name": "1552_A. Subsequence Permutation"
+},
+{
+"tier": "cc_easy_conf_tr",
+"problem_name": "1556_A. A Variety of Operations"
+},
+{
+"tier": "cc_easy_conf_tr",
+"problem_name": "1559_B. Mocha and Red and Blue"
+},
+{
+"tier": "cc_easy_conf_tr",
+"problem_name": "1591_A. Life of a Flower"
+},
+{
+"tier": "cc_easy_conf_tr",
+"problem_name": "1598_A. Computer Game"
+},
+{
+"tier": "cc_easy_conf_tr",
+"problem_name": "1606_A. AB Balance"
+},
+{
+"tier": "cc_easy_conf_tr",
+"problem_name": "1607_C. Minimum Extraction"
+},
+{
+"tier": "cc_easy_conf_tr",
+"problem_name": "168_A. Wizards and Demonstration"
+},
+{
+"tier": "cc_easy_conf_tr",
+"problem_name": "615_A. Bulbs"
+},
+{
+"tier": "cc_easy_conf_tr",
+"problem_name": "938_B. Run For Your Prize"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1043_A. Elections"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1189_A. Keanu Reeves"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1227_A. Math Problem"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1547_C. Pair Programming"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1553_A. Digits Sum"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1555_A. PizzaForces"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1557_A. Ezzat and Two Subsequences"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1559_A. Mocha and Math"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1567_B. MEXor Mixup"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1569_B. Chess Tournament"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1574_A. Regular Bracket Sequences"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1582_A. Luntik and Concerts"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1594_B. Special Numbers"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1604_B. XOR Specia-LIS-t"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1606_B. Update Files"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1607_B. Odd Grasshopper"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1608_A. Find Array"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1618_C. Paint the Array"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1619_B. Squares and Cubes"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1620_B. Triangles on a Rectangle"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1622_B. Berland Music"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "1623_B. Game on Ranges"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "284_B. Cows and Poker Game"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "339_A. Helpful Maths"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "519_B. A and B and Compilation Errors"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "776_A. A Serial Killer"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "805_A. Fake NP"
+},
+{
+"tier": "cc_easy_tr",
+"problem_name": "915_A. Garden"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1012_B. Chemical table"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1016_C. Vasya And The Mushrooms"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1025_D. Recovering BST"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1030_E. Vasya and Good Sequences"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1062_D. Fun with Integers"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1075_D. Intersecting Subtrees"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1107_D. Compression"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1144_F. Graph Without Long Directed Paths"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1199_E. Matching vs Independent Set"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1208_D. Restore Permutation"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1249_D1. Too Many Segments (easy version)"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1334_D. Minimum Euler Cycle"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1359_D. Yet Another Yet Another Task"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1369_D. TediousLee"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "141_C. Queue"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1427_D. Unshuffling a Deck"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1458_B. Glass Half Spilled"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1466_F. Euclid's nightmare"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1468_J. Road Reform"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "149_D. Coloring Brackets"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1525_D. Armchairs"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1575_D. Divisible by Twenty-Five"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1579_F. Array Stabilization (AND version)"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1586_D. Omkar and the Meaning of Life"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1594_D. The Number of Imposters"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1598_E. Staircases"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1606_E. Arena"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1608_C. Game Master"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1613_D. MEX Sequences"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1619_D. New Year's Problem"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1619_G. Unusual Minesweeper"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "161_B. Discounts"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1620_C. BA-String"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "1620_E. Replace the Numbers"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "171_C. A Piece of Cake"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "223_C. Partial Sums"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "242_C. King's Path"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "252_B. Unsorting Array"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "25_D. Roads not only in Berland"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "306_C. White, Black and White Again"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "366_D. Dima and Trap Graph"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "465_C. No to Palindromes!"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "512_B. Fox And Jumping"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "551_B. ZgukistringZ"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "591_C. Median Smoothing"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "625_A. Guest From the Past"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "626_D. Jerry's Protest"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "634_C. Factory Repairs"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "656_E. Out of Controls"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "765_D. Artsem and Saunders"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "920_E. Connected Components?"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "949_C. Data Center Maintenance"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "954_F. Runner's Problem"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "967_D. Resource Distribution"
+},
+{
+"tier": "cc_hard_tr",
+"problem_name": "990_E. Post Lamps"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "1031_B. Curiosity Has No Limits"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "10_B. Cinema Cashier"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "1189_D1. Add on a Tree"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "1191_C. Tokitsukaze and Discard Items"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "1238_B. Kill 'Em All"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "1334_A. Level Statistics"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "1408_B. Arrays Sum"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "1600_J. Robot Factory"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "1613_C. Poisoned Dagger"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "1618_D. Array and Operations"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "177_D1. Encrypting Messages"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "221_C. Little Elephant and Problem"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "260_B. Ancient Prophesy"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "372_A. Counting Kangaroos is Fun"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "505_B. Mr. Kitayuta's Colorful Graph"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "538_B. Quasi Binary"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "687_A. NP-Hard Problem"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "719_B. Anatoly and Cockroaches"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "7_B. Memory Manager"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "931_E. Game with String"
+},
+{
+"tier": "cc_med_conf_tr",
+"problem_name": "952_C. Ravioli Sort"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1036_B. Diagonal Walking v.2"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1062_B. Math"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "10_B. Cinema Cashier"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1131_C. Birthday"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1140_B. Good String"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1165_E. Two Arrays and Sum of Functions"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1189_D1. Add on a Tree"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1216_D. Swords"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "122_D. Lucky Transformation"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1264_A. Beautiful Regional Contest"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1294_B. Collecting Packages"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1315_B. Homecoming"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1344_A. Hilbert's Hotel"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1391_C. Cyclic Permutations "
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1396_A. Multiples of Length"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "139_B. Wallpaper"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1408_B. Arrays Sum"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1539_D. PriceFixed"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1549_C. Web of Lies"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1551_B2. Wonderful Coloring - 2"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1553_C. Penalty"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1553_D. Backspace"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1555_B. Two Tables"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1555_C. Coin Rows"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1556_B. Take Your Places!"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1559_C. Mocha and Hiking"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1559_D1. Mocha and Diana (Easy Version)"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1560_D. Make a Power of Two"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1575_J. Jeopardy of Dropped Balls"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1582_C. Grandma Capa Knits a Scarf"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1591_C. Minimize Distance"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1594_C. Make Them Equal"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1600_J. Robot Factory"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1601_A. Array Elimination"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1606_C. Banknotes"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1613_C. Poisoned Dagger"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1615_B. And It's Non-Zero"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1618_D. Array and Operations"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "1619_C. Wrong Addition"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "171_A. Mysterious numbers - 1"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "177_D1. Encrypting Messages"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "221_C. Little Elephant and Problem"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "233_C. Cycles"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "248_B. Chilly Willy"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "260_B. Ancient Prophesy"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "312_B. Archer"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "331_A2. Oh Sweet Beaverette"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "358_B. Dima and Text Messages"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "371_B. Fox Dividing Cheese"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "377_A. Maze"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "38_C. Blinds"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "401_C. Team"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "40_B. Repaintings"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "438_A. The Child and Toy"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "451_B. Sort the Array"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "45_I. TCMCF+++"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "483_C. Diverse Permutation"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "521_A. DNA Alignment"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "538_B. Quasi Binary"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "604_B. More Cowbell"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "638_B. Making Genome in Berland"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "687_A. NP-Hard Problem"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "757_B. Bash's Big Day"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "774_D. Lie or Truth"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "774_K. Stepan and Vowels"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "7_B. Memory Manager"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "825_C. Multi-judge Solving"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "845_B. Luba And The Ticket"
+},
+{
+"tier": "cc_med_tr",
+"problem_name": "990_B. Micro-World"
+}
+]
