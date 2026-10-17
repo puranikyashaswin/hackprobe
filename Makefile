@@ -2,9 +2,9 @@ PY ?= env/cpu/bin/python
 
 .PHONY: env-cpu smoke smoke-resume s2.1 s2.0 s2.6 s2.3a s2.2 s2.3
 
-env-cpu:            ## CPU-only venv (pyarrow, huggingface_hub, pytest) for the local data steps
+env-cpu:            ## CPU-only environment for the analyses, figures and tests
 	uv venv -q env/cpu --python 3.12
-	uv pip install -q --python env/cpu/bin/python pyarrow huggingface_hub pytest
+	uv pip install -q --python env/cpu/bin/python -r requirements-cpu.txt --extra-index-url https://download.pytorch.org/whl/cpu --index-strategy unsafe-best-match
 
 smoke:              ## fast checks, CPU only, < 5 min
 	$(PY) -m pytest -q

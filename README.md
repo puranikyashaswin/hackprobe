@@ -11,8 +11,8 @@ Linear probes on a coding model's activations detect reward hacking in finished 
 ```bash
 git clone https://github.com/puranikyashaswin/hackprobe
 cd hackprobe
-uv venv env/cpu --python 3.12
-uv pip install --python env/cpu/bin/python -r requirements-cpu.txt   # analyses, figures, tests
+make env-cpu                    # CPU environment: analyses, figures, tests
+source env/cpu/bin/activate
 pytest -q
 ```
 
