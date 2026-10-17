@@ -52,7 +52,7 @@ The design, thresholds and decision rules in [`PREREG.md`](PREREG.md) were fixed
 ```bibtex
 @misc{sharma2026hackprobe,
   title  = {Do a Coding Model's Activations Warn of Test-Gaming Earlier than Its Text? A Pre-registered Test},
-  author = {Sharma, Puranik Yashaswin},
+  author = {Sharma, Yashaswin Puranik},
   year   = {2026},
   url    = {https://github.com/puranikyashaswin/hackprobe}
 }
