@@ -89,7 +89,7 @@ Length & 0.337 & 0.369 \\
 \label{tab:indist}
 \end{table}
 
-Table~\ref{tab:indist} matches HackTrace. The probe's editable lead over TF-IDF is mostly an artefact: 60\% of test-tampering rows have an empty or truncated final solution, and without those rows the probe scores 0.886 and TF-IDF 0.793. Comment stripping does not move the probe ($+0.001$ $[0.000, 0.002]$ read-only). Honest programs that pass the visible tests and fail the hidden ones score like honest code (0.56 and 0.52 against honest-correct), so the probe is not reading ``this is wrong''.
+Table~\ref{tab:indist} matches HackTrace. Extraction artefacts inflate the editable numbers but not the probe's lead: 60\% of test-tampering rows have an empty or truncated final solution, and without those rows the probe scores 0.886 and TF-IDF 0.793, a lead of 0.093 against 0.049 with them. On editable rows the activations do carry information beyond the text, in distribution; the open question here is timing. Comment stripping does not move the probe ($+0.001$ $[0.000, 0.002]$ read-only). Honest programs that pass the visible tests and fail the hidden ones score like honest code (0.56 and 0.52 against honest-correct), so the probe is not reading ``this is wrong''.
 
 One signal exists before any code is written: activations at the end of the first prompt predict \emph{which problems} get hacked (pooled AUROC 0.778 against 0.536 for TF-IDF on the prompt; gain $+0.24$ $[0.14, 0.35]$ read-only, $+0.15$ $[0.07, 0.24]$ editable), beyond a solvability probe. It is a problem-level propensity, constant within a problem, not an early warning for an attempt.
 
