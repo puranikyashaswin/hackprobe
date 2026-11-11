@@ -52,6 +52,9 @@ SPL = ROOT / "results/hacktrace/splits"
 ANCH = ROOT / "results/qwen3-8b/anchor"  # frozen rule and probe always come from here
 CONF = ROOT / "results/qwen3-8b/confirm"
 SET = {"rows": "anchor_pertoken.parquet", "split": "test", "out": ANCH}  # --set C switches to the S8.0 rows
+# Post hoc fold-seed check (--seed-dir): the probe, its rule and its outputs live in the seed directory;
+# the stored text and judge streams are still read from the registered directories. Default: all in ANCH.
+PROBE = {"dir": ANCH, "text": None, "seeded": False}
 REV = json.loads((ROOT / "env/revisions.json").read_text())["models"]["Qwen/Qwen3-8B"]
 SEED_HALVES, SEED_TRAIN = 20261014, 20261016
 STEP, BUDGET, MAX_TRAIN_POS = 16, 0.05, 32
@@ -94,7 +97,7 @@ class _Stop(Exception):
 
 def cmd_probe(a):
     from extract.pooled import load_model
-    P = np.load(ANCH / "pertoken_probe.npz")
+    P = np.load(PROBE["dir"] / "pertoken_probe.npz")
     layer = int(P["layer"])
     mu, sd, w = (torch.tensor(np.asarray(P[k], np.float32).reshape(-1), device="cuda") for k in ("mu", "sd", "w"))
     b = float(P["b"])
@@ -268,9 +271,10 @@ def load_scores(rows):
         for k in z.files:
             if k != "_meta":
                 probe[k] = z[k]
-    tx = np.load(D / "replay_text.npz")
+    T = PROBE["text"] or D  # text and judge streams: the registered directory, also under --seed-dir
+    tx = np.load(T / "replay_text.npz")
     judge = {}
-    for f in sorted(D.glob("replay_judge*.json")):
+    for f in sorted(T.glob("replay_judge*.json")):
         d = json.loads(f.read_text())
         meta.setdefault("judge", []).append(d.pop("_meta", None))
         judge.update(d)
@@ -330,14 +334,14 @@ def cmd_calibrate(a):
     S, meta = load_scores(crow)
     honest = [r for r in crow if r["label"] == 0]
     rule = {"budget": BUDGET, "seed_halves": SEED_HALVES, "calibration_problems": sorted(cal),
-            "probe_file_sha256": sha(ANCH / "pertoken_probe.npz"), "layer": int(np.load(ANCH / "pertoken_probe.npz")["layer"]),
+            "probe_file_sha256": sha(PROBE["dir"] / "pertoken_probe.npz"), "layer": int(np.load(PROBE["dir"] / "pertoken_probe.npz")["layer"]),
             "n_calibration": {"problems": len(cal), "honest": len(honest), "hacks": len(crow) - len(honest)}, "detectors": {}}
     for det in ("probe",) + TEXT:
         mx = [summarize_row(r, S[r["id"]], det)["max"] for r in honest]
         thr = threshold_at_budget(mx)
         rule["detectors"][det] = {"threshold": thr, "cadence": 1 if det in ("probe", "length") else STEP,
                                   "calibration_false_alarm": float(np.mean(np.array(mx) > thr))}
-    path = ANCH / "replay_rule.json"
+    path = PROBE["dir"] / "replay_rule.json"
     path.write_text(json.dumps(rule, indent=2) + "\n")
     print(json.dumps({k: v["threshold"] for k, v in rule["detectors"].items()}))
     print("rule sha256", sha(path))
@@ -355,15 +359,15 @@ def boot_counts(problems, n, seed):
 
 
 def cmd_evaluate(a):
-    rule = json.loads((ANCH / "replay_rule.json").read_text())
+    rule = json.loads((PROBE["dir"] / "replay_rule.json").read_text())
     rows = dev_rows()
-    assert rule["probe_file_sha256"] == sha(ANCH / "pertoken_probe.npz"), "probe changed after calibration"
+    assert rule["probe_file_sha256"] == sha(PROBE["dir"] / "pertoken_probe.npz"), "probe changed after calibration"
     if SET["split"] == "test":
         cal = set(rule["calibration_problems"])
         assert cal == calibration_problems(rows), "calibration half changed"
         ev = [r for r in rows if r["problem_name"] not in cal]
     else:  # S8.0: every set-C row, scored once with the rule unchanged
-        assert sha(ANCH / "replay_rule.json") == FROZEN_RULE_SHA, "rule file differs from PREREG amendment 2"
+        assert PROBE["seeded"] or sha(PROBE["dir"] / "replay_rule.json") == FROZEN_RULE_SHA, "rule file differs from PREREG amendment 2"
         ev = rows
     S, meta = load_scores(ev)
     probs = sorted({r["problem_name"] for r in ev})
@@ -415,7 +419,7 @@ def cmd_evaluate(a):
     point = stats(np.ones(len(probs)))
     B2 = boot_counts(probs, 2000, 1)
     boots = [stats(c) for c in B2]
-    report = {"rule_sha256": sha(ANCH / "replay_rule.json"), "n_eval": {"problems": len(probs), "hacks": len(hacks), "honest": len(honest)},
+    report = {"rule_sha256": sha(PROBE["dir"] / "replay_rule.json"), "n_eval": {"problems": len(probs), "hacks": len(hacks), "honest": len(honest)},
               "thresholds": {d: rule["detectors"][d]["threshold"] for d in dets}, "detectors": {}}
     for det in dets:
         report["detectors"][det] = {}
@@ -485,11 +489,19 @@ def main():
     ap.add_argument("--part", type=int, default=0)
     ap.add_argument("--nparts", type=int, default=1)
     ap.add_argument("--set", default="dev", choices=["dev", "C"])
+    ap.add_argument("--seed-dir", default=None, help="post hoc fold-seed check: directory holding that seed's pertoken_probe.npz")
     a = ap.parse_args()
     if a.set == "C":
         assert a.cmd != "calibrate", "set C is never calibrated on"
         CONF.mkdir(parents=True, exist_ok=True)
         SET.update(rows="anchor_pertoken_C.parquet", split="train", out=CONF)
+    if a.seed_dir:
+        assert a.cmd != "text", "the text streams are not refit per seed"
+        sd = Path(a.seed_dir).resolve()
+        assert sd != ANCH and (sd / "pertoken_probe.npz").exists(), "seed directory needs its own pertoken_probe.npz"
+        PROBE.update(dir=sd, text=SET["out"], seeded=True)
+        SET["out"] = sd / ("C" if a.set == "C" else "dev")
+        SET["out"].mkdir(parents=True, exist_ok=True)
     {"probe": cmd_probe, "text": cmd_text, "calibrate": cmd_calibrate, "evaluate": cmd_evaluate}[a.cmd](a)
 
 

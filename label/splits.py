@@ -8,6 +8,7 @@ rows from each of the 239 problems that have both (S2.6).
 Asserts: no problem in two folds, in both train and test, or in C.
 """
 
+import argparse
 import json
 import random
 from collections import Counter, defaultdict
@@ -26,6 +27,13 @@ COLS = ["id", "variant", "tier", "problem_name", "ACT", "judge_category"]
 
 
 def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--fold-seed", type=int, default=SEED,
+                    help="seed for the fold assignment only; the default reproduces the registered split")
+    ap.add_argument("--out", default=None, help="output directory (default: results/hacktrace/splits)")
+    a = ap.parse_args()
+    out = Path(a.out) if a.out else OUT
+    out.mkdir(parents=True, exist_ok=True)
     rng = random.Random(SEED)
     c_names = set(json.loads(C_FILE.read_text()))
 
@@ -47,7 +55,10 @@ def main() -> None:
         picked += neg[v][: N_NEG // len(neg)]
 
     names = sorted({r["problem_name"] for r in picked})
-    rng.shuffle(names)
+    rng.shuffle(names)  # always consumed, so the test sample below is identical for every fold seed
+    if a.fold_seed != SEED:
+        names = sorted(names)
+        random.Random(a.fold_seed).shuffle(names)
     fold = {n: i % FOLDS for i, n in enumerate(names)}
     for r in picked:
         r["fold"] = fold[r["problem_name"]]
@@ -72,8 +83,8 @@ def main() -> None:
     assert not tr_names & c_names and not te_names & c_names, "problem from C"
     assert all(len({fold[n]}) == 1 for n in tr_names), "problem in two folds"
 
-    pq.write_table(pa.Table.from_pylist(picked), OUT / "anchor_train.parquet")
-    pq.write_table(pa.Table.from_pylist(anchor_test), OUT / "anchor_test.parquet")
+    pq.write_table(pa.Table.from_pylist(picked), out / "anchor_train.parquet")
+    pq.write_table(pa.Table.from_pylist(anchor_test), out / "anchor_test.parquet")
     n_pos = sum(r["ACT"] for r in picked)
     cats = Counter(r["judge_category"] for r in picked if r["ACT"])
     summary = {
@@ -85,7 +96,9 @@ def main() -> None:
         "test_by_variant": dict(Counter(r["variant"] for r in anchor_test)),
         "asserts": "no problem in two folds, in both train and test, or in C",
     }
-    (OUT / "anchor.summary.json").write_text(json.dumps(summary, indent=2) + "\n")
+    if a.fold_seed != SEED:
+        summary["fold_seed"] = a.fold_seed
+    (out / "anchor.summary.json").write_text(json.dumps(summary, indent=2) + "\n")
     print(json.dumps(summary, indent=2))
 
 

@@ -1,0 +1,3 @@
+read-only-test {'probe_meancode': 0.997, 'diff_of_means_meancode': 0.983, 'solvability_probe': 0.452, 'probe_meangen': 0.997, 'diff_of_means_meangen': 0.981, 'tfidf_lr': 0.993, 'visible_literal_lr': 0.936, 'length_only': 0.337, 'prompted_judge': 0.993}
+editable-test {'probe_meancode': 0.965, 'diff_of_means_meancode': 0.807, 'solvability_probe': 0.387, 'probe_meangen': 0.945, 'diff_of_means_meangen': 0.831, 'tfidf_lr': 0.906, 'visible_literal_lr': 0.64, 'length_only': 0.369, 'prompted_judge': 0.731}
+-> results/qwen3-8b/seeds/20261020/indist.json

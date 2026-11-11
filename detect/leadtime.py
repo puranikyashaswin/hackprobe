@@ -17,6 +17,7 @@ t*>=2 a feedback LR. Holm F1 test at k = L(0.8) for t*=1.
 """
 
 import json
+import random
 import re
 from collections import defaultdict
 from pathlib import Path
@@ -154,8 +155,10 @@ def fit_probe(acts, pairs, layer, c):
     return score
 
 
-def select_layer(acts, pairs):
+def select_layer(acts, pairs, seed=20261015):
     probs = sorted({p[0] for p in pairs})
+    if seed != 20261015:  # the default keeps the registered fold assignment (sorted order)
+        random.Random(seed).shuffle(probs)
     fold = {p: i % 5 for i, p in enumerate(probs)}
     best = (-1, None, None)
     for layer in LAYERS:
@@ -234,7 +237,12 @@ def text_scores(train_pairs, tr_text, tr_acts, test_pairs, te_text, te_acts):
     return out
 
 
-def main():
+def main(seed=20261015, out_dir=None):
+    """seed and out_dir are for the post hoc fold-seed check; the defaults are the registered run."""
+    anch = Path(out_dir) if out_dir else ROOT / "results/qwen3-8b/anchor"
+    assert seed == 20261015 or out_dir is not None, "a non-default seed needs its own --out"
+    anch.mkdir(parents=True, exist_ok=True)
+    outf = anch / "leadtime.json"
     tok = AutoTokenizer.from_pretrained("Qwen/Qwen3-8B", revision=REV)
     te_rows = pq.read_table(SPL / "anchor_pertoken.parquet").to_pylist()
     tr_rows = pq.read_table(SPL / "anchor_pertoken_train.parquet").to_pylist()
@@ -259,9 +267,9 @@ def main():
     te_pairs, drop = pairs_for(A_te, te_acts)
     for prob, k, pid, pi, nid, ni in te_pairs:
         assert int(te_acts[pid]["ids"][pi]) == int(te_acts[nid]["ids"][ni]), "current-token mismatch"
-    cv_auc, layer, c = select_layer(tr_acts, tr_pairs)
+    cv_auc, layer, c = select_layer(tr_acts, tr_pairs, seed)
     score = fit_probe(tr_acts, tr_pairs, layer, c)
-    np.savez(ROOT / "results/qwen3-8b/anchor/pertoken_probe.npz", layer=layer, C=c, **score.params)  # frozen for S3.8
+    np.savez(anch / "pertoken_probe.npz", layer=layer, C=c, **score.params)  # frozen for S3.8
     sp = {(pid, pi): float(score(te_acts[pid]["L"][layer][pi])) for _, _, pid, pi, _, _ in te_pairs}
     sn = {(nid, ni): float(score(te_acts[nid]["L"][layer][ni])) for _, _, _, _, nid, ni in te_pairs}
     probe_curve, by_k = curve(te_pairs, sp, sn)
@@ -327,13 +335,14 @@ def main():
         cB, _ = curve(keep, spB, snB)
         report["t2plus"] = {"curves": {"probe_crossfit": {int(k): v for k, v in cB.items()}},
                             "n_pairs": len(b_pairs), "n_problems": len(probsB), "descriptive_only": True}
-    OUTF.write_text(json.dumps(report, indent=2) + "\n")
-    print("->", OUTF)
+    report["fold_seed"] = seed
+    outf.write_text(json.dumps(report, indent=2) + "\n")
+    print("->", outf)
 
 
-def confirm():
+def confirm(out_dir=None):
     """S8.0: the frozen S3.6 probe on set C, no refit (PREREG amendment 2; descriptive, development L(0.8) = 0)."""
-    P = np.load(ROOT / "results/qwen3-8b/anchor/pertoken_probe.npz")
+    P = np.load((Path(out_dir) if out_dir else ROOT / "results/qwen3-8b/anchor") / "pertoken_probe.npz")
     layer, mu, sd, w, b = int(P["layer"]), P["mu"], P["sd"], P["w"].reshape(-1), float(P["b"])
     rows = pq.read_table(SPL / "anchor_pertoken_C.parquet").to_pylist()
     acts = load_acts("C")
@@ -350,12 +359,17 @@ def confirm():
         report[panel] = {"curve": {int(k): v for k, v in cv.items()}, "drop_rate_by_k": {int(k): v for k, v in drop.items()},
                          "L": {str(th): lead_L(by_k, ks, th) for th in (0.8, 0.9)} if ks else None}
         print(panel, {k: round(cv[k]["auroc"], 3) for k in ks[:5]}, "n_prob@1", cv.get(1, {}).get("n_problems"), flush=True)
-    out = ROOT / "results/qwen3-8b/confirm/leadtime.json"
+    out = (Path(out_dir) / "leadtime_C.json") if out_dir else ROOT / "results/qwen3-8b/confirm/leadtime.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(report, indent=2) + "\n")
     print("->", out)
 
 
 if __name__ == "__main__":
-    import sys
-    confirm() if len(sys.argv) > 1 and sys.argv[1] == "confirm" else main()
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("cmd", nargs="?", default="main", choices=["main", "confirm"])
+    ap.add_argument("--seed", type=int, default=20261015, help="fold seed for layer selection (post hoc seed check)")
+    ap.add_argument("--out", default=None, help="output directory for a non-default seed")
+    a = ap.parse_args()
+    confirm(a.out) if a.cmd == "confirm" else main(a.seed, a.out)

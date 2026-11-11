@@ -1,0 +1,2 @@
+t*=1: {'layer': 16, 'L0.8': 0, 'L0.9': 0, 'auroc_k1': 0.6552094606861484}
+-> results/qwen3-8b/seeds/20261020/leadtime.json

@@ -44,8 +44,8 @@ def load_acts(ids, pos):
     return out
 
 
-def rows_with_text(split_file, raw_split):
-    rows = pq.read_table(SPL / split_file).to_pylist()
+def rows_with_text(split_file, raw_split, spl=SPL):
+    rows = pq.read_table(spl / split_file).to_pylist()
     want = {r["id"] for r in rows}
     raw = {r["id"]: r for r in pq.read_table(RAW / f"trajectories/{raw_split}.parquet",
                                               columns=["id", "final_solution", "final_test", "tier", "problem_name"]).to_pylist()
@@ -69,11 +69,16 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--shuffle", action="store_true")
     ap.add_argument("--layers", default="all")
+    ap.add_argument("--splits", default=None, help="directory with anchor_train/test.parquet (default: results/hacktrace/splits)")
+    ap.add_argument("--out", default=None, help="output file (default: results/qwen3-8b/anchor/indist.json)")
     a = ap.parse_args()
     out_path = (Path("/data/scratch") if a.shuffle else ROOT / "results/qwen3-8b/anchor") / "indist.json"
+    if a.out and not a.shuffle:
+        out_path = Path(a.out)
+    spl = Path(a.splits) if a.splits else SPL
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
-    tr, te = rows_with_text("anchor_train.parquet", "train"), rows_with_text("anchor_test.parquet", "test")
+    tr, te = rows_with_text("anchor_train.parquet", "train", spl), rows_with_text("anchor_test.parquet", "test", spl)
     dedup = {}
     for f in ("dedup_train.parquet", "dedup_test.parquet"):
         p = ROOT / "results/hacktrace/labels" / f

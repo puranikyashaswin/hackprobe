@@ -1,0 +1,16 @@
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<01:02,  6.37it/s]Loading weights:   9%|▉         | 37/399 [00:00<00:02, 169.49it/s]Loading weights:  18%|█▊        | 71/399 [00:00<00:01, 230.96it/s]Loading weights:  26%|██▋       | 105/399 [00:00<00:01, 267.81it/s]Loading weights:  36%|███▌      | 144/399 [00:00<00:00, 308.43it/s]Loading weights:  45%|████▍     | 179/399 [00:00<00:00, 311.02it/s]Loading weights:  54%|█████▍    | 215/399 [00:00<00:00, 324.57it/s]Loading weights:  64%|██████▎   | 254/399 [00:00<00:00, 344.46it/s]Loading weights:  73%|███████▎  | 291/399 [00:00<00:00, 344.05it/s]Loading weights:  82%|████████▏ | 326/399 [00:01<00:00, 344.34it/s]Loading weights:  90%|█████████ | 361/399 [00:01<00:00, 338.02it/s]Loading weights:  99%|█████████▉| 396/399 [00:01<00:00, 338.73it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 305.48it/s]
+50/711
+100/711
+150/711
+200/711
+250/711
+300/711
+350/711
+400/711
+450/711
+500/711
+550/711
+600/711
+650/711
+700/711
+{"seconds": 742.4404144287109, "assistant_tokens": 640944, "layer": 24, "gpu": "NVIDIA A10G"} -> /data/hackprobe/results/qwen3-8b/seeds/20261017/C/replay_probe.npz
