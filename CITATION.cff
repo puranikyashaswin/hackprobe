@@ -7,6 +7,11 @@ authors:
     email: puranikyashaswinsharma@gmail.com
 license: Apache-2.0
 repository-code: "https://github.com/puranikyashaswin/hackprobe"
+doi: "10.5281/zenodo.24200118"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24200118"
+    description: "Paper on Zenodo"
 preferred-citation:
   type: article
   title: "Do a Coding Model's Activations Warn of Test-Gaming Earlier than Its Text? A Pre-registered Test"
@@ -14,3 +19,5 @@ preferred-citation:
     - family-names: Puranik
       given-names: Yashaswin Sharma
   year: 2026
+  doi: "10.5281/zenodo.24200118"
+  url: "https://doi.org/10.5281/zenodo.24200118"

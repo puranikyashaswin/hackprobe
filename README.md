@@ -1,6 +1,6 @@
 # hackprobe
 
-Code for the paper [Do a Coding Model's Activations Warn of Test-Gaming Earlier than Its Text? A Pre-registered Test](paper/hackprobe.pdf).
+Code for the paper [Do a Coding Model's Activations Warn of Test-Gaming Earlier than Its Text? A Pre-registered Test](paper/hackprobe.pdf) (Zenodo, DOI [10.5281/zenodo.24200118](https://doi.org/10.5281/zenodo.24200118)).
 
 Linear probes on a coding model's activations detect reward hacking in finished code at near ceiling, but so do text classifiers. This repository tests the question that matters for monitoring: whether the activations give an *earlier* warning, before the first shortcut token is written, at a fixed false-alarm budget. On HackTrace (Qwen3-8B) they do not: in a pre-registered prospective replay, confirmed on a reserved set of problems, the probe warns before the shortcut no more often than text monitors. The study also covers disguised cheats, an LLM rewriting attack, a second model family (Gemma-4-12B-it) and unprompted cheating on ImpossibleBench.
 
@@ -54,6 +54,7 @@ The design, thresholds and decision rules in [`PREREG.md`](PREREG.md) were fixed
   title  = {Do a Coding Model's Activations Warn of Test-Gaming Earlier than Its Text? A Pre-registered Test},
   author = {Puranik, Yashaswin Sharma},
   year   = {2026},
+  doi    = {10.5281/zenodo.24200118},
   url    = {https://github.com/puranikyashaswin/hackprobe}
 }
 ```
